@@ -8,4 +8,12 @@ $(document).ready(function () {
 
         localStorage.setItem(time, text);
     })
-})
+
+    function timeTracker() {
+        var presentTime = moment().hour();
+
+        $(".time-block").each(function () {
+            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+        }
+    })
+}
